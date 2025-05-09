@@ -1,0 +1,402 @@
+.root
+{
+	--color-primary: #222270;
+	--color-sec: #051c55;
+	--color-tertiary: #b721d2;
+	--color-quaternary: #570f3d;
+
+	--color-headings: rgb(47, 68,
+			173);
+	--color-banners: #2c0f57;
+
+	--color-main-banner: var(--color-primary), darkgrey;
+
+	--color-heading-text: #f2fafa;
+
+	--color-main-backgrd: var(--color-tertiary), #d1bafa;
+	--color-sec-backgrd: var(--color-quaternary), #8f6ec7;
+	--color-aside-backgrd: var(--color-tertiary), #832b9e;
+
+	--color-prim-text-dark: rgb(66, 11, 74);
+	--color-prim-text-light: #fae4f7;
+
+	--font-family: 'Robato', 'Tangerine', Times New 'Roman', serif;
+	font-size: 20px;
+
+
+}
+
+/*************default values*************/
+a
+{
+	color: var(--color-prim-text-dark);
+	text-decoration: none;
+	list-style: none;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: rgb(233, 219, 20);
+}
+
+a:visited
+{
+	color: rgb(255, 253, 253);
+	text-decoration: none;
+	list-style: none;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+li
+{
+	list-style: none;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+
+}
+
+ul
+{
+	list-style: none;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+h1 h2 h3 h4 h5 h6
+{
+	font-family: Robato, Tangerine, Times, serif;
+	background-color: #5817ba;
+	color: #fbf9f9;
+	text-align: center;
+	margin: 0;
+
+}
+
+/********* default values ***********/
+
+body
+{
+	margin: 0;
+	display: grid;
+}
+
+.header-container
+{
+	width: 100%;
+	background-color: #8037ee;
+	text-align: center;
+	font-weight: bold;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.header-container h1
+{
+	grid-column: 1;
+	padding: 10px;
+	color: rgb(255, 253, 253);
+	text-align: center;
+	margin: 0;
+}
+
+
+.navigation-menu-item
+{
+
+	display: flex;
+	flex-flow: row nowrap;
+	text-decoration: none;
+	margin-bottom: 0;
+	list-style: none;
+	justify-content: space-around;
+	text-align: center;
+	font-weight: bold;
+	background-color: var(--color-prim-backgrd), white;
+	padding: 10px;
+}
+
+.navigation-menu-item a:hover
+{
+	text-decoration: underline;
+	color: rgb(248, 190, 15);
+}
+
+.main-aside-container
+{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: auto;
+	width: 100%;
+	height: auto;
+	min-height: 25vh;
+	margin-bottom: 0;
+	background-color: var(--color-prim-backgrd), white;
+	color: var(--color-prim-text-dark);
+}
+
+
+.main-content
+{
+
+	background-color: #d1bafa;
+	color: rgb(12, 12, 12);
+	text-align: center;
+
+	border: 1px solid #2c0f57;
+	display: grid;
+	grid-column: 1;
+	grid-row: 1;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	max-width: 100%;
+	border-radius: 20px;
+	margin: 10px;
+	max-height: fit-content;
+
+
+}
+
+.main-content h2
+{
+	grid-column: 1 /4;
+	width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	text-align: center;
+	color: #fbf9f9;
+	font-weight: bold;
+	background: #33097b;
+	margin: 0;
+
+
+}
+
+.card
+{
+
+	grid-column: 1 / span 2;
+	display: grid;
+	grid-template-columns: 1fr 3fr 2fr;
+	width: 100%;
+	height: auto;
+	min-height: 25vh;
+	background-color: #d1bafa;
+	color: rgb(12, 12,
+			12);
+	text-align: center;
+	border-radius: 20px;
+}
+
+.section1
+{
+	width: 100%;
+	max-height: fit-content;
+	grid-column: 1 / span 3;
+	grid-row: 2;
+
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 3fr 2fr;
+	grid-template-rows: auto;
+	column-gap: 20px;
+	row-gap: 10px;
+	justify-content: space-around;
+
+}
+
+.section1 h3
+{
+	grid-column: 1;
+	grid-row: 1;
+	text-align: center;
+	margin-left: 5px;
+	width: 100%;
+	color: black;
+	max-height: fit-content;
+	padding: 5px;
+}
+
+.section1 p
+{
+	grid-column: 2;
+	grid-row: 1;
+	text-align: left;
+	color: black;
+	max-height: fit-content;
+	margin: 0;
+	width: 100%;
+	padding: 10px;
+
+}
+
+.section1 img
+{
+	grid-column: 3;
+	grid-row: 1;
+
+	place-items: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 30px 50px 50px 50px;
+
+}
+
+.section2
+{
+	width: 100%;
+	max-height: fit-content;
+	grid-column: 1 / span 4;
+	grid-row: 3;
+
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 3fr 2fr;
+	grid-template-rows: auto;
+
+	justify-content: space-around;
+
+}
+
+.section2 h2
+{
+	grid-column: 1 / span 3;
+	grid-row: 1;
+	text-align: center;
+	color: white;
+	margin: 0;
+	width: 100%;
+	text-decoration-line: underline;
+	text-decoration-color: #2c0f57;
+	font-weight: bold;
+	max-height: fit-content;
+	padding: 0px;
+	border-radius: 0;
+}
+
+.section2 p
+{
+
+	grid-column: 2 / 4;
+	grid-row: 2;
+	text-align: center;
+	color: rgb(12, 12,
+			12);
+	max-height: fit-content;
+	margin: 0;
+	width: 75%;
+
+
+}
+
+.section2 img
+{
+	grid-column: 1;
+	grid-row: 2;
+
+	place-items: center;
+
+	align-items: center;
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+
+}
+
+.aside-content
+{
+	grid-column: 2;
+	grid-row: 1;
+
+	background-color: #9b88bb;
+	color: rgb(13, 12, 12);
+	border: 3px solid #2c0f57;
+	border-radius: 20px;
+
+	text-align: center;
+	padding: 10px;
+	margin: 10px
+}
+
+.aside-content h2
+{
+	text-align: center;
+	color: #fbf9f9;
+	margin: 0;
+	padding: 0;
+	background: #2c0f57;
+	width: 100%;
+}
+
+.resource-list
+{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	text-decoration: none;
+
+	color: rgb(12, 12, 12);
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.resource-list a
+{
+
+	text-decoration: none;
+	list-style: none;
+
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+
+.footer-container
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: rgb(255, 253, 253);
+	text-align: center;
+	font-weight: bold;
+	background-color: var(--color-footer, #8037ee);
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+
+.copywrite
+{
+	grid-column: 1;
+	color: rgb(255, 253, 253);
+	text-align: left;
+}
+
+.update
+{
+	grid-column: 2;
+	color: rgb(255, 253, 253);
+	text-align: right;
+}
