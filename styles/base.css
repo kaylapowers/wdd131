@@ -36,7 +36,7 @@ a
 	padding: 0;
 	margin: 0;
 	font-weight: bold;
-	color: white
+	color: rgb(16, 2, 2);
 }
 
 a:hover
@@ -128,8 +128,20 @@ body
 	justify-content: space-around;
 	text-align: center;
 	font-weight: bold;
-	background-color: var(--color-prim-backgrd), white;
+	background-color: rgb(247, 208, 228);
 	padding: 10px;
+}
+
+.navigation-menu-item a
+{
+	text-decoration: none;
+	list-style: none;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	color: rgb(12, 12, 12);
 }
 
 .navigation-menu-item a:hover
