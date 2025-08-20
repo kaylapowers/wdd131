@@ -35,7 +35,8 @@
 	/***quinary color values***/
 	--color-z-dark: #0a043e;
 	--color-z-mid: #0a043e;
-		/*******header- footer- banners- headings colors*********/
+	/*******header- footer- banners- headings colors*********/
+	/*
 	--color-footer: #210152;
 	--color-header-text: #f2fafa;
 	--color-header: var(--color--wine-dark) #210152;
@@ -43,11 +44,8 @@
 			173);
 	--color-headings-text: #fbfcfc;
 	--color-banners: #2c0f57;
+*/
 
-	/*********background colors*********/
-	--color-main-backgrd: var(--color-tertiary), #e0d2f8;
-
-	--color-aside-backgrd: var(--color-tertiary), #f1d4fa;
 
 	/*******Font Family*********/
 	--font-family: 'Robato', 'Tangerine', Times New 'Roman', serif;
@@ -375,7 +373,7 @@ main
 
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 
-	padding: 20px 0px ;
+	padding: 20px 0px;
 
 	background-color: #a1ceee;
 	display: grid;
@@ -390,7 +388,7 @@ main
 {
 	grid-area: head;
 	text-align: center;
-	color:#53031b;
+	color: #53031b;
 	font-size: 2em;
 }
 
