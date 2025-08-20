@@ -289,9 +289,7 @@ main
 .card-container
 {
 	display: flex;
-	grid-template-columns: 1fr 150px;
 	background-color: #e0e9f9;
-	/* Example fixed width for cards */
 
 }
 
@@ -310,7 +308,7 @@ main
 }
 
 
-.card1 h3
+.card1 h2
 {
 	grid-area: heading;
 	font-size: 2em;
@@ -396,10 +394,9 @@ main
 	font-weight: 600;
 	font-style: normal;
 	width: 100%;
-
 }
 
-.card2 h3
+.card2 h2
 {
 	text-align: center;
 	color: #53031b;
