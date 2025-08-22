@@ -1,0 +1,204 @@
+/* Larger screens: Display cards to the right of the form */
+/*960-1024px*/
+/*media Query for large screen*/
+
+@media screen and (min-width: 600px)
+/***53rem or 640px*/
+{
+
+
+	.header-container
+	{
+		text-align: center;
+	}
+
+	.navigation-container
+	{
+		display: grid;
+	}
+
+	.navigation-menu-item
+	{
+		display: block;
+	}
+
+	.navigation-menu-item a
+	{
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		margin: 10px;
+		text-decoration: none;
+		font-size: 17px;
+		min-width: 45px;
+	}
+
+	#hamb-btn
+	{
+		display: none;
+	}
+
+	/*
+.heading-area
+{
+	text-align: left;
+}
+
+.heading-area
+{
+	grid-area: heading;
+
+}
+
+#nav-bar
+{
+	grid-area: nav-bar;
+
+}
+
+#nav-bar li
+{
+	overflow: hidden;
+	display: inline;
+	padding: 15px;
+	font-size: 1.6em;
+	border-right: 1px solid #bbb;
+}
+
+#nav-bar li:last-child
+{
+	border-right: none;
+}
+
+
+
+
+*/
+
+	/***********discover page images*********/
+
+
+
+	h1
+	{
+		font-size: 1em;
+	}
+
+	h2
+	{
+		font-size: 1.4em;
+	}
+
+	h3
+	{
+		font-size: 1em;
+	}
+
+	h4
+	{
+		font-size: 1.4em;
+	}
+
+	p
+	{
+		font-size: larger;
+	}
+
+	.card-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 300px);
+	}
+
+	.figure-caption
+	{
+		width: 100%;
+	}
+
+	figure img
+	{
+		width: 100%;
+		border: thick #400106 solid;
+	}
+
+	.temp-hdg
+	{
+		margin-bottom: 5px;
+	}
+
+	figcaption
+	{
+		margin-top: 5px;
+	}
+
+	/*
+
+
+.socialLinks
+{
+	grid-column: 2;
+	display: flex;
+	flex-direction: row;
+	padding: 0 20px;
+	margin: 5px;
+	align-items: center;
+}
+
+.socialLinks a
+{
+
+	width: 40px;
+	height: 40px;
+	border: darkgrey solid 1px;
+	border-radius: 4px;
+	background-Color: white;
+	margin: 5px;
+
+}
+
+.socialLinks img
+{
+	width: 100%;
+	height: 100%;
+	margin-right: 5px;
+}
+
+.socialLinks a:hover
+{
+	background-color: #620c4146;
+	font-size: larger;
+	cursor: pointer;
+}
+
+.projBy p
+{
+	grid-column: 3;
+	color: white;
+	border-right: #aaa solid 1px;
+
+}
+
+.projBy p:last-child
+{
+	border-bottom: #aaa solid 0px;
+}
+*/
+	.footer-container
+	{
+		display: grid;
+		grid-template-areas: "copy-date modify";
+		gap: 5px;
+	}
+
+	.copy
+	{
+		grid-area: copy-date;
+		color: white;
+	}
+
+	.modify
+	{
+		grid-area: modify;
+		color: white;
+	}
+}
