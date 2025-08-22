@@ -2,7 +2,7 @@
 /*960-1024px*/
 /*media Query for large screen*/
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 53rem)
 /***53rem or 640px*/
 {
 
@@ -37,47 +37,6 @@
 	{
 		display: none;
 	}
-
-	/*
-.heading-area
-{
-	text-align: left;
-}
-
-.heading-area
-{
-	grid-area: heading;
-
-}
-
-#nav-bar
-{
-	grid-area: nav-bar;
-
-}
-
-#nav-bar li
-{
-	overflow: hidden;
-	display: inline;
-	padding: 15px;
-	font-size: 1.6em;
-	border-right: 1px solid #bbb;
-}
-
-#nav-bar li:last-child
-{
-	border-right: none;
-}
-
-
-
-
-*/
-
-	/***********discover page images*********/
-
-
 
 	h1
 	{
@@ -131,58 +90,7 @@
 		margin-top: 5px;
 	}
 
-	/*
 
-
-.socialLinks
-{
-	grid-column: 2;
-	display: flex;
-	flex-direction: row;
-	padding: 0 20px;
-	margin: 5px;
-	align-items: center;
-}
-
-.socialLinks a
-{
-
-	width: 40px;
-	height: 40px;
-	border: darkgrey solid 1px;
-	border-radius: 4px;
-	background-Color: white;
-	margin: 5px;
-
-}
-
-.socialLinks img
-{
-	width: 100%;
-	height: 100%;
-	margin-right: 5px;
-}
-
-.socialLinks a:hover
-{
-	background-color: #620c4146;
-	font-size: larger;
-	cursor: pointer;
-}
-
-.projBy p
-{
-	grid-column: 3;
-	color: white;
-	border-right: #aaa solid 1px;
-
-}
-
-.projBy p:last-child
-{
-	border-bottom: #aaa solid 0px;
-}
-*/
 	.footer-container
 	{
 		display: grid;

@@ -33,16 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const breadcrumbList = document.getElementById('page-title');
 	const pathNames = window.location.pathname.split('/').filter(path => path);
 
-	/*
-	//just doing current page so dont need home breadcrubm
-	// Add "Home" as the first breadcrumb
-	const homeItem = document.createElement('li');
-	const homeLink = document.createElement('a');
-	homeLink.href = '/';
-	homeLink.textContent = 'Home';
-	homeItem.appendChild(homeLink);
-	breadcrumbList.appendChild(homeItem);
-	*/
 
 	// Generate breadcrumbs from the URL path
 	let currentPath = '';

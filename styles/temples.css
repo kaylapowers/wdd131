@@ -289,159 +289,6 @@ p
 	color: rgb(248, 190, 15);
 }
 
-/*
-.logohead-grid-container
-{
-	width: 100%;
-	color: white;
-	background-color: #400106;
-
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
-	display: grid;
-	grid-template-columns: 1fr 75px;
-	grid-template-areas:
-		"heading-area hamb-btn " "navigation . ";
-
-}
-
-
-.heading-area
-{
-	grid-area: heading-area;
-	font-size: 1em;
-	width: 100%;
-	transition: width 0.5s ease-in-out;
-	text-align: left;
-	font-size: 2.5em;
-	font-style: bold;
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
-	font-style: italic;
-	text-align: center;
-	font-weight: bold;
-	place-items: center;
-}*/
-
-
-
-/************ NAVIGATION********/
-/*
-.nav-bar
-{
-	grid-area: navigation;
-	list-style: none;
-}
-
-nav ul
-{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-}
-#nav-bar li
-{
-	color: #fff;
-	text-align: left;
-
-	text-decoration: none;
-	font-family: "Lato", sans-serif;
-	font-weight: 900;
-	font-style: normal;
-	background-color: #400106;
-	overflow: hidden;
-	min-width: 45px;
-	min-height: 45px;
-	float: left
-}
-#nav-bar li a {
-display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-#nav-bar li a:hover:not(.active) {
-	background-color: #400106;
-}
-#nav-bar li:hover
-{
-	text-decoration: underline double;
-	background-color: #eee;
-	color: #000;
-	font-weight: 900;
-	font-style: bold;
-
-}
-
-.navigation-links
-{}
-
-#nav-bar.show
-{
-	display: block;
-}
-
-.active
-{
-	color: rgb(239, 180, 86);
-}
-*/
-/********************Header****************************/
-
-/************ NAVIGATION********/
-/****display in rows for small screen***/
-
-/*
-.nav-cont
-{
-	grid-column: 2;
-	display: flex;
-	overflow: hidden;
-
-	display: none;
-	grid-template-areas:
-		"nav-cont .";
-	grid-area: nav-cont;
-	list-style: none;
-	text-decoration: none;
-	padding: 5px;
-	width: 100%;
-	color: white;
-	transition: width 0.5s ease-in-out;
-	text-align: center;
-	font-weight: bold;
-	min-width: 45px;
-	min-height: 45px;
-}
-
-.nav-cont li
-{
-	color: white;
-	border: #aaa solid 1px;
-	width: 100%;
-	background-color: #350c19;
-	padding: 5px;
-	margin: 10px;
-}
-
-.nav-cont a.show
-{
-	display: block;
-}
-
-
-.nav-cont a:hover
-{
-	font-size: larger;
-	color: rgb(248, 190, 15);
-}
-
-
-*/
-
 /************HAMBURGER NAVIGATION********/
 
 #hamb-btn
@@ -535,11 +382,6 @@ figure
 {
 	border: thin silver solid;
 
-	/* Arranges image and caption vertically */
-
-	color: white;
-
-	/* Centers the figure */
 }
 
 figure img
@@ -560,23 +402,10 @@ figcaption
 	font-weight: 700;
 	font-style: normal;
 	font-size: medium;
-	border-radius: (15px 150px);
+	border: radius 10px;
 	color: white;
 }
 
-/*
-main
-{
-	background-color: #ccf8fd;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	display: grid;
-	transition: width 0.5s ease-in-out;
-	grid-template-columns: "breadcrumb"
-		"maincontent";
-
-}*/
 
 .current,
 .active
@@ -685,59 +514,3 @@ footer
 	font-size: 1.2em;
 	color: #ffffff;
 }
-
-/*
-.chamberContact p
-{
-	color: white;
-}
-
-.socialLinks
-{
-	display: flex;
-	margin: 5px;
-	align-items: center;
-}
-
-.socialLinks a
-{
-
-	width: 40px;
-	height: 40px;
-	border: darkgrey solid 1px;
-	border-radius: 4px;
-	background-Color: white;
-	margin: 5px;
-
-}
-
-.socialLinks img
-{
-	width: 100%;
-	height: 100%;
-	margin-right: 5px;
-}
-
-.socialLinks a:hover
-{
-	background-color: #620c4146;
-	font-size: larger;
-	cursor: pointer;
-}
-	
-
-.projBy p
-{
-	color: white;
-}
-
-.projBy p:last-child
-{
-	border-bottom: #aaa solid 1px;
-}
-
-.copy-dates p
-{
-	color: white;
-}
-	*/
