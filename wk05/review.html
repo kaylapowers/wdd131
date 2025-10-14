@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Review of Product">
+	<meta name="author" content="Kayla Powers">
+
+
+	<title>Product Review</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<!-- STYLE SHEETS -->
+	<link href="styles/normalize.css" rel="stylesheet">
+	<!-- phone-default -->
+	<link href="styles/small.css" rel="stylesheet">
+	<!-- enhance-tablet -->
+	<link href="styles/medium.css" rel="stylesheet">
+	<!-- enhance-desktop -->
+	<link href="styles/large.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+	<!-- HEADER HERE -->
+	<header>
+		<h1 class="thanksHdr">Thank You For the Product Review</h1>
+	</header>
+
+
+	<!-- CONTENT HERE -->
+	<main>
+		<p class="thanksPara">Thanks You for Reviewing our Product.</p>
+		<p>Reviews Completed: <span id="reviewCount"></span></p>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// Get the current count from localStorage, default to 0 if not found
+				let reviewCount = localStorage.getItem('completedReviews');
+				if (reviewCount === null) {
+					reviewCount = 0;
+				} else {
+					reviewCount = parseInt(reviewCount);
+				}
+
+				// Display the initial count
+				document.getElementById('reviewCount').textContent = reviewCount;
+
+
+				reviewCount++;
+				localStorage.setItem('completedReviews', reviewCount);
+				document.getElementById('reviewCount').textContent = reviewCount;
+
+				alert('Review submitted successfully!'); // Simulate success message
+
+				// Optionally, you can submit the form programmatically after updating the counter
+				// reviewForm.submit();
+			});
+			;
+		</script>
+	</main>
+
+	<!-- FOOTER HERE -->
+	<footer>
+		<br>
+		&copy; 2024 &bull; Kayla Powers &bull; 208-222-9999
+	</footer>
+</body>
+
+</html>
