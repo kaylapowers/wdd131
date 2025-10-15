@@ -1,44 +1,20 @@
 .root
 {
 	/*******************************color Scheme****************/
-
-	--blue1-color: #96D2D9;
-	--blue2-color: #96a3d9;
-	--blue4-color: #040fe3;
-	--blue5-color: #183F8C;
-	--blue6-color: #0d2350;
-
-	--peach2-color: #f5d8a3;
-	--peach-color: #d99c79;
-
-	--peach1-color: #fff9e7;
-
-	--yellow-color: #fce5a1;
-	--gold1-color: #fee773;
-	--gold2-color: #F2B749;
-
-
-	--maroon1-color: #6c020a;
-	--maroon2-color: #3b0b02;
-	--maroon3-color: #400106;
-
-	--red-color: #af3001;
-
-
-	--blue3-color: #2c71fb;
+	--button-color: #fce5a1;
+	--forminput-color: #fff9e7;
+	--button-color-2: #183F8C;
+	--secondary-color: #0d2350;
+	--background-color: #96D2D9;
+	--primary-color: #400106;
+	--goldaccent-color: #F2B749;
+	--form-background-color: #f5d8a3;
 
 }
 
-li
-{
-	margin: 30px;
-}
-
-
-/*
 .body-font
 {
-	font-family: "lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 100;
 	font-style: normal;
 	font-variation-settings:
@@ -74,64 +50,63 @@ li
 /******************************Site Wide****************/
 *
 {
-	font-family: "Lato",
+	font-family: "Roboto",
 		sans-serif;
 	margin: 0;
-	font-weight: 900;
-	max-width: 1200px;
+	max-width: 1000px;
 	box-sizing: border-box;
 }
 
 h1,
 h2,
-h3
+h3,
+h4,
+h5,
+h6
 {
+	font-family: "Roboto", serif;
+	margin: 0;
 	text-align: center;
 	background-color: #0d2350;
 	color: white;
 	width: 100%;
-	margin: 0;
+	min-height: 55px;
 }
 
 h1
 {
-	font-size: 2em;
+	font-size: 1.1em;
 	color: #400106;
 	background-color: #fce5a1;
 }
 
 h2
 {
-	font-size: 1.6em;
+	font-size: 1.0em;
 	background-color: #183F8C;
-	color: #fafbfb;
+	color: #0d2350;
 }
 
 h3
 {
-	font-size: 1.2em;
+	font-size: .7em;
 	background-color: #400106;
 	color: white;
 }
 
-body
-{
-	font-family: "Lato", serif;
-	font-weight: 600;
-	font-size: 1.2em;
-	width: 100%;
-}
 
 p
 {
 	color: #0d2350;
 	text-align: center;
 	margin: 0;
-	font-family: "Roboto", serif;
-	font-weight: 700;
-	padding: 10px;
-	background-color: #fdfdfc;
+	padding: 3px;
+}
 
+body
+{
+	font-size: .8em;
+	width: 100%;
 }
 
 /******************************header****************/
@@ -144,7 +119,6 @@ header
 }
 
 
-/*
 .logohead-grid-container
 {
 	display: grid;
@@ -172,7 +146,7 @@ header
 
 .heading-area p
 {
-	margin: 40px;
+	margin: 10px;
 	align-self: center;
 	font-size: 4em;
 	font-style: bold;
@@ -197,10 +171,10 @@ header
 	height: auto;
 	transition: width 0.5s ease-in-out;
 }
-*/
+
+
 
 /************HAMBURGER NAVIGATION********/
-/*
 .hamburger-area
 {
 	margin: 15px;
@@ -237,9 +211,9 @@ header
 {
 	content: "\00D7";
 }
-*/
+
 /************ NAVIGATION********/
-/*
+
 .whatish2
 {
 	display: grid;
@@ -282,19 +256,6 @@ header
 	color: #183F8C;
 }
 
-.pageh2
-{
-	background-color: #0d2350;
-	color: white;
-
-	border: #aaa solid 1px;
-	min-height: 30px;
-	align-items: center;
-	padding-top: 5px;
-
-}
-
-
 .navigation
 {
 	grid-area: navigation;
@@ -317,18 +278,19 @@ header
 {
 	border: #aaa solid 1px;
 	background-color: #280104;
-	margin: 5px;
 	list-style: none;
 	margin-left: 0;
 	margin-right: 20px;
 	width: 90%;
+	min-height: 25px;
+	padding-top: 5px;
 }
 
 
 .navigation a
 {
 	color: white;
-	font-size: .8em;
+	font-size: 1em;
 	text-decoration: none;
 	margin-left: 5px;
 }
@@ -367,9 +329,8 @@ button:hover
 	font-size: larger;
 
 }
-*/
+
 /************HOME PAGE********/
-/*
 img
 {
 	max-width: 100%;
@@ -377,19 +338,43 @@ img
 	transition: width 0.5s ease-in-out;
 }
 
+.maincont
+{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ccc;
+}
+.pageh2
+{
+	background-color: #0d2350;
+	color: white;
+	place-items: center;
+	font-size: x-large;
+	height: 50px;
+	padding-top: 10px;
+
+}
+h2 {
+	padding-top: 15px;
+}
 .main-cont-info
 {
 	background-color: #96D2D9;
+
 }
 
 .form-wrapper
 {
-	background-color: #fff9e7;
+	background-color: #f5edae;
 	border-radius: 8px;
-	box-shadow: 0 2px 10px rgba(233, 156, 54, 0.6);
-	padding: 30px;
+	box-shadow: 0 2px 10px rgba(15, 10, 4, 0.6);
 	max-width: 500px;
 	margin: 0 auto;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
 }
 
 form p
@@ -400,9 +385,7 @@ form p
 label
 {
 	display: block;
-	margin: 5px;
 	color: #0d2350;
-	margin-bottom: 10px;
 }
 
 input
@@ -487,13 +470,17 @@ section
 
 article
 {
+	/*
 	display: flex;
+	/* Use flexbox to arrange the main content and aside */
+	/*flex-wrap: wrap;*/
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-areas: "h1 h1"
 		"laside artp1"
 		"laside ."
 		"laside artp2";
+	/* Allow content to wrap on smaller screens */
 	text-align: center;
 }
 
@@ -504,6 +491,8 @@ article
 	background-color: #400106;
 	color: white;
 	margin: 10px;
+	font-size: larger;
+	padding-top: 15px;
 }
 
 .artp1
@@ -527,19 +516,28 @@ article
 	grid-area: laside;
 	width: 80%;
 	margin: 5px;
+	/* Adjust width as needed */
 	padding: 15px;
+	/* Space between main content and aside */
 	background-color: #fce5a1;
+	/* Light gray background to make it stand out */
 	border-left: 5px solid #0d2350;
+	/* A colored border for visual emphasis */
 	float: right;
+	/* Position the aside on the right side of the main content */
 	font-style: italic;
+	/* Emphasize the text within the aside */
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	/* Soft shadow for depth */
 }
 
 .learn-aside img
 {
 	max-width: 90%;
+	/* Ensure the image fits within the aside */
 	height: auto;
 	border-radius: 14px;
+	/* Slightly rounded corners for a softer look */
 	padding: 10px;
 	border: #220103 2px solid;
 }
@@ -555,6 +553,7 @@ article
 .learn-aside h2
 {
 	color: white;
+	/* Match heading color to the border color */
 	margin-top: 0;
 	margin-bottom: 10px;
 	background-color: #0d2350;
@@ -568,6 +567,7 @@ article
 .indx-aside h2
 {
 	color: white;
+	/* Match heading color to the border color */
 	margin-top: 0;
 	margin-bottom: 10px;
 	min-height: 20px;
@@ -610,6 +610,8 @@ article
 .info-btn
 {
 
+	/* Ensures the button is above the image */
+	/* semi-transparent background */
 	z-index: -200;
 	background-color: rgba(0, 0, 255, 0.7);
 	color: white;
@@ -623,6 +625,9 @@ article
 	margin-right: 50px;
 
 }
+.pretty-button1 {
+	display: none;
+}
 
 .pretty-button
 {
@@ -631,22 +636,37 @@ article
 	min-width: 50px;
 	max-width: 125px;
 	min-height: 50px;
+	/* The element will be at least 50 pixels tall */
 	max-height: 100px;
+	/* The element will not exceed 500 pixels in height */
 	margin-top: 10px;
+	/* Blue background */
 	box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);
 	color: white;
+	/* White text */
 	padding: .5em .4em;
+	/* Vertical and horizontal padding */
 	border: none;
+	/* No border */
 	border-radius: 5px;
+	/* Slightly rounded corners */
 	font-family: 'Arial', sans-serif;
+	/* Font style */
 	font-size: 16px;
+	/* Font size */
 	font-weight: bold;
+	/* Bold text */
 	text-align: center;
+	/* Center text */
 	place-self: center;
 	text-decoration: none;
+	/* Remove underline for anchor tags */
 	display: inline-block;
+	/* Allows padding and width/height */
 	cursor: pointer;
+	/* Pointer cursor on hover */
 	transition: background-color 0.3s ease, transform 0.1s ease;
+	/* Smooth transition for hover effects */
 }
 
 .pretty-button:hover
@@ -671,6 +691,8 @@ article
 }
 
 .image-cardL
+
+/*image on the left*/
 {
 	object-fit: cover;
 	padding: 10px;
@@ -690,6 +712,7 @@ article
 
 .thecaption
 
+/*displayCadets figure caption*/
 {
 	grid-area: thecaption;
 	border: 1px solid #828282;
@@ -716,6 +739,7 @@ article
 
 .display-image
 
+/*displayCadets figure image*/
 {
 	grid-area: theimage;
 	border: 1px solid #828282;
@@ -733,8 +757,14 @@ article
 	font-weight: bold;
 	font-size: larger;
 }
-*/
+
+
+.card h3 {
+	padding-top: 10px;
+}
+
 /****************************FOOTER ***********/
+
 footer
 {
 	display: grid;
@@ -748,13 +778,8 @@ footer
 	place-items: center;
 	gap: 5px;
 	text-align: center;
-	padding: 20px;
 }
 
-
-
-
-/*
 .projBy2 p
 {
 	grid-area: vcontact;
@@ -898,33 +923,41 @@ footer
 	padding: 10px;
 	border-radius: 5px;
 }
-*/
+
 /* Modal Styling */
-/*
 .modal
 {
 	display: none;
+	/* Hidden by default */
 	position: fixed;
+	/* Stay in place */
 	z-index: 1;
+	/* Sit on top */
 	left: 0;
 	top: 0;
 	width: 100%;
+	/* Full width */
 	height: 100%;
+	/* Full height */
 	overflow: auto;
+	/* Enable scroll if needed */
 	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
 }
 
 .modal-content
 {
 	background-color: #fefefe;
 	margin: 15% auto;
+	/* 15% from the top and centered */
 	padding: 20px;
 	border: 1px solid #888;
 	width: 80%;
+	/* Could be more or less, depending on screen size */
 	border-radius: 8px;
 	position: relative;
 }
-*/
+
 /*
 .close-button
 {
