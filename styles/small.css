@@ -1,117 +1,142 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /*----------- BODY --------------*/
-body {
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
+body
+{
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
-header {
-    padding: .5rem 2%;
-    background-color: #ddd;
+header
+{
+	padding: .5rem 2%;
+	background-color: #ddd;
 	width: 100%;
-	
-}
-header h1 {margin: 0;
-background-color: #152269;
-color: white;
-width: 100%;}
 
-header h2 {
-	margin: 0; font-weight: normal;font-size: 1.2em;
+}
+
+header h1
+{
+	margin: 0;
+	background-color: #152269;
+	color: white;
+	width: 100%;
+}
+
+header h2
+{
+	margin: 0;
+	font-weight: normal;
+	font-size: 1.2em;
 
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
-    background-color: #152269;
+nav
+{
+	background-color: #152269;
 }
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+nav ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
-nav ul li {border-bottom: solid 1px #333;}
-nav ul li a {
-    display: block;
-    background-color:#152269;
-    color: #eee;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
+
+nav ul li
+{
+	border-bottom: solid 1px #333;
+}
+
+nav ul li a
+{
+	display: block;
+	background-color: #152269;
+	color: #eee;
+	padding: .5rem 0;
+	text-decoration: none;
+	font-size: .9rem;
+	text-align: center;
 	border: black solid 3px;
 }
-nav ul li.active a {
-    background-color: #000;
-    color: #fff;
+
+nav ul li.active a
+{
+	background-color: #000;
+	color: #fff;
 }
+
 /*----------- MAIN --------------*/
 
-  /* Hide the default radio button appearance */
-  input[type="radio"]
-  {
-  	-webkit-appearance: none;
-  	/* For WebKit browsers like Chrome, Safari */
-  	-moz-appearance: none;
-  	/* For Mozilla Firefox */
-  	appearance: none;
-  	/* Standard property */
+/* Hide the default radio button appearance */
+input[type="radio"]
+{
+	-webkit-appearance: none;
+	/* For WebKit browsers like Chrome, Safari */
+	-moz-appearance: none;
+	/* For Mozilla Firefox */
+	appearance: none;
+	/* Standard property */
 
-  	/* Set the minimum size */
-  	min-width: 25px;
-  	min-height: 25px;
+	/* Set the minimum size */
+	min-width: 25px;
+	min-height: 25px;
 	padding: 10px;
 
-  	/* Basic styling for the custom radio button */
-  	border: 2px solid #422525;
-  	border-radius: 50%;
-  	/* Makes it circular */
-  	outline: none;
-  	/* Removes outline on focus */
-  	cursor: pointer;
-  	position: relative;
-  	/* For positioning the checked state */
-  	display: inline-block;
-  	/* Allows width/height to be applied */
-  	vertical-align: middle;
-  	/* Aligns with text if present */
-  }
+	/* Basic styling for the custom radio button */
+	border: 2px solid #422525;
+	border-radius: 50%;
+	/* Makes it circular */
+	outline: none;
+	/* Removes outline on focus */
+	cursor: pointer;
+	position: relative;
+	/* For positioning the checked state */
+	display: inline-block;
+	/* Allows width/height to be applied */
+	vertical-align: middle;
+	/* Aligns with text if present */
+}
 
-  /* Style for the checked state (the inner dot) */
-  input[type="radio"]:checked
-  {
-  	background-color: #05284e;
-  	/* Example checked color */
-  	border-color: #05284e;
-  }
-
- 
-
-  /* Style for the label to ensure it's clickable and aligned */
-  label
-  {
-  	vertical-align: middle;
-  	margin-left: 5px;
-  	/* Space between radio button and label */
-  	cursor: pointer;
-  }
+/* Style for the checked state (the inner dot) */
+input[type="radio"]:checked
+{
+	background-color: #05284e;
+	/* Example checked color */
+	border-color: #05284e;
+}
 
 
 
+/* Style for the label to ensure it's clickable and aligned */
+label
+{
+	vertical-align: middle;
+	margin-left: 5px;
+	/* Space between radio button and label */
+	cursor: pointer;
+}
 
-main {
-    padding: 0 2%;
-    min-height: 20rem;
+
+
+
+main
+{
+	padding: 0 2%;
+	min-height: 20rem;
 	background-color: lightskyblue;
 }
 
 /*----------- FOOTER --------------*/
-footer {
-    background-color: #152269;
-    padding: .5rem 2%;
-    text-align: center;
+footer
+{
+	background-color: #152269;
+	padding: .5rem 2%;
+	text-align: center;
 	color: white;
 }
