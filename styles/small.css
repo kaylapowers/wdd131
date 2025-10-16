@@ -1,9 +1,4 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
 
 /*----------- BODY --------------*/
 body {
@@ -16,14 +11,16 @@ body {
 header {
     padding: .5rem 2%;
     background-color: #ddd;
-	width: 100;
+	width: 100%;
 	
 }
 header h1 {margin: 0;
 background-color: #152269;
 color: white;
-width: 100;}
-header h2 {margin: 0; font-weight: normal;font-size: 1.2em;
+width: 100%;}
+
+header h2 {
+	margin: 0; font-weight: normal;font-size: 1.2em;
 
 }
 
@@ -52,6 +49,59 @@ nav ul li.active a {
     color: #fff;
 }
 /*----------- MAIN --------------*/
+
+  /* Hide the default radio button appearance */
+  input[type="radio"]
+  {
+  	-webkit-appearance: none;
+  	/* For WebKit browsers like Chrome, Safari */
+  	-moz-appearance: none;
+  	/* For Mozilla Firefox */
+  	appearance: none;
+  	/* Standard property */
+
+  	/* Set the minimum size */
+  	min-width: 25px;
+  	min-height: 25px;
+	padding: 10px;
+
+  	/* Basic styling for the custom radio button */
+  	border: 2px solid #422525;
+  	border-radius: 50%;
+  	/* Makes it circular */
+  	outline: none;
+  	/* Removes outline on focus */
+  	cursor: pointer;
+  	position: relative;
+  	/* For positioning the checked state */
+  	display: inline-block;
+  	/* Allows width/height to be applied */
+  	vertical-align: middle;
+  	/* Aligns with text if present */
+  }
+
+  /* Style for the checked state (the inner dot) */
+  input[type="radio"]:checked
+  {
+  	background-color: #05284e;
+  	/* Example checked color */
+  	border-color: #05284e;
+  }
+
+ 
+
+  /* Style for the label to ensure it's clickable and aligned */
+  label
+  {
+  	vertical-align: middle;
+  	margin-left: 5px;
+  	/* Space between radio button and label */
+  	cursor: pointer;
+  }
+
+
+
+
 main {
     padding: 0 2%;
     min-height: 20rem;

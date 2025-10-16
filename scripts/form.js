@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			averagerating: 5.0
 		}
 	];
-	
+
 	// Loop through the data and create option elements
 	products.forEach(product => {
 		const option = document.createElement('option');
@@ -37,4 +37,5 @@ document.addEventListener('DOMContentLoaded', function () {
 		option.textContent = product.name;
 		productSelect.appendChild(option);
 	});
+
 });
