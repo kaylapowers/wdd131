@@ -49,6 +49,72 @@ nav ul li.active a {
     color: #fff;
 }
 /*----------- MAIN --------------*/
+
+  /* Hide the default radio button appearance */
+  input[type="radio"]
+  {
+  	-webkit-appearance: none;
+  	/* For WebKit browsers like Chrome, Safari */
+  	-moz-appearance: none;
+  	/* For Mozilla Firefox */
+  	appearance: none;
+  	/* Standard property */
+
+  	/* Set the minimum size */
+  	min-width: 45px;
+  	min-height: 45px;
+
+  	/* Basic styling for the custom radio button */
+  	border: 2px solid #ccc;
+  	border-radius: 50%;
+  	/* Makes it circular */
+  	outline: none;
+  	/* Removes outline on focus */
+  	cursor: pointer;
+  	position: relative;
+  	/* For positioning the checked state */
+  	display: inline-block;
+  	/* Allows width/height to be applied */
+  	vertical-align: middle;
+  	/* Aligns with text if present */
+  }
+
+  /* Style for the checked state (the inner dot) */
+  input[type="radio"]:checked
+  {
+  	background-color: #007bff;
+  	/* Example checked color */
+  	border-color: #007bff;
+  }
+
+  /* Add an inner circle for the checked state */
+  input[type="radio"]:checked::before
+  {
+  	content: '';
+  	display: block;
+  	width: 60%;
+  	/* Size of the inner dot relative to the outer circle */
+  	height: 60%;
+  	background-color: white;
+  	border-radius: 50%;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  }
+
+  /* Style for the label to ensure it's clickable and aligned */
+  label
+  {
+  	vertical-align: middle;
+  	margin-left: 5px;
+  	/* Space between radio button and label */
+  	cursor: pointer;
+  }
+
+
+
+
 main {
     padding: 0 2%;
     min-height: 20rem;
